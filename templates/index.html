@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <link rel="icon" href="{{url_for('static',filename='img/GetJob.ico')}}">
+
+    <title>Get Job</title>
+  </head>
+  <body oncontextmenu="return false">
+<!-- ------------------------------------------------- START NAV BAR  -------------------------------------------------- -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light " id="nav">
+          <div class="container-fluid">
+              <a class="navbar-brand getjob_text text-light" href="" ><img src="{{url_for('static', filename='img/GetJob.png')}}" class="img_getjob" alt="Italian Trulli"> Get Job</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-toggler"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li><a class="home_about">Home</a></li>  ||  <li><a class="home_about">About Us</a></li>-->               
+                </ul>         
+              <div>
+
+                    <!-- Home About Us Signin Signup  -->
+              <div>           
+                    <!--<a class="home_about">Home</a>  -->
+                    <a class="home_about" href="">Home</a>
+                    <a class="home_about" href="/About">About Us</a>
+                    <a class="BTN1 signup" href="/Signup">Sign Up</a>
+                    <!--<button class="BTN2 BTN11" > <a href="/Signin" class="signin_home">Signin</a> </button>-->
+                    <a href="/Signin" class="btn  BTN2 ">Sign In</a>
+              </div>
+
+          </div>
+        </nav>
+
+      </div>
+    </div>
+<!-- ------------------------------------------------- END NAV BAR  -------------------------------------------------- -->
+<!-- ------------------------------------------------  CAROUSEL START --------------------------------------------------- -->
+
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <!-- --------------------  CAROUSEL IMAGE 1 (SLIDER)  ------------------------ -->
+    <div class="carousel-item active" data-bs-interval="2000">   
+      <img src="{{ url_for('static',filename='img/F1.png') }}" class="img_slider w-100" alt="...">
+      <div class="carousel-caption  ">
+        <h1 class="A_h1">Looking For A Job1?</h1>
+        <p class="A_p">We Will Help You.</p>
+        <a type="button" class="btn button_GS">Get started</a>
+      </div>
+    </div>
+  
+    <!-- --------------------  CAROUSEL IMAGE 2 (SLIDER)  ------------------------ -->
+    <div class="carousel-item" data-bs-interval="2500">
+        <img src="{{ url_for('static',filename='img/F2.png') }}" class="img_slider w-100" alt="...">
+      <div class="carousel-caption  ">
+        <h1 class="A_h1">Want To Hire Someone 2?</h1>
+        <p class="A_p">We Will Help You.</p>
+        <button type="button" class="btn button_GS">Get started</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- ------------------------------------------  CAROUSEL END ------------------------------------------------------------>
+<!-- ------------------------------------------  OUR SERVICES START ---------------------------------------------------------- -->
+
+
+
+
+<div class="Our_Services_hr">
+  <hr class="oshr">
+
+</div>
+<div class="Our_Services">
+  <h3 class="osh3">Our Services</h3>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 main_osservice_card">
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static',filename='img/OS1.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title os_card_title">Plumber</h5>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static',filename='img/OS2.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title os_card_title">Electrician</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static',filename='img/OS3.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title os_card_title">Paniter</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{ url_for('static',filename='img/OS4.jpg') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title os_card_title">Carpenter</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------  OUR SERVICES END ---------------------------------------------------------- -->
+<!-- ------------------------------------------  ABOUT US START ---------------------------------------------------------- -->
+
+
+<!--
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col about_us">
+                <h3 >About Us</h3>
+
+            </div>
+        </div>
+    </div>-->
+
+
+
+
+<hr/><div class="container-fluid cf ">
+        <div class="row MainFoot">
+          <p class="AU_Content">
+            <div class="col about_us AU AU_div">
+                
+                <h3 class="h3abs">About Us
+                <div class="Our_About_hr">
+                  <hr class="oshr">
+                
+                </div><!--
+                <div class="Our_Services">
+                  <h3 class="osh3">Our Services</h3>
+                </div>-->
+
+                </h3>
+                  For Job Seekers, we place a greater focus on our website as the delivery and engagement platform.<br>
+        
+                  where Job seekers create their multiple Job profile and employers create request with full description about
+                  their<br>
+                  need , when Job provider created the request then Jobseekers who are under the range of 5km distance from
+                  employer current<br>
+                  location they are able accept the job request after that both and employer able to track each other to see
+                  their location status .<br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------  ABOUT US END ------------------------------------------------------------>
+<!-- ------------------------------------------  FOOTER START ------------------------------------------------------------>
+
+
+
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="container-fluid my-5 mt-1 MainFoot">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white foot" style="background-color: #0a0a23">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Our Future Plan</h5>
+              <p>
+                • Give employeement to skill persons<br>
+                • Better Performance and scalability<br>
+                • Portability and compatibility<br>
+                • Reliability, Maintainability, Availability<br>
+                • Security<br>
+              </p>
+            </div>
+            <!--Grid column-->
+
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Job Seeker</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">How to create a Job Profile</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Verify your Account</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Employer</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">How to send request</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-0 mb-0 mb-md-0 contact">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <p><i class="bi bi-house me-3"></i> Bhopal,Gokul Dham,India</p>
+              <p>
+                <i class="bi bi-envelope me-3"></i>
+                support@GetJob.com
+              </p>
+              <p><i class="bi bi-telephone"></i> &nbsp&nbsp +91 620 030 7399</p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+
+        <hr class="mb-4" />
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Register for free</span>
+            <a type="button" class="btn btn-outline-light btn-rounded" href="/Signup">
+              Sign up!
+            </a>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+        
+
+        <hr class="mb-4" />
+        <!-- Section: Social media Start -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+        </section>
+        <!-- Section: Social media End-->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">GetJob Technologies Inc.m</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+
+
+
+<!-- ------------------------------------------  FOOTER END ------------------------------------------------------------>
+
+
+
+    
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
